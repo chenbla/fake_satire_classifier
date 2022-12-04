@@ -1,3 +1,4 @@
+torch @ https://download.pytorch.org/whl/cpu/torch-1.6.0%2Bcpu-cp36-cp36m-linux_x86_64.whl
 Flask==1.1.2
 numpy==1.21.5
 scikit_learn==1.1.3
