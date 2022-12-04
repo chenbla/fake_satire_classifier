@@ -11,7 +11,8 @@ from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
 from sklearn.model_selection import cross_val_score
 from xgboost import XGBClassifier
 
-def model_selection(x, y,number_of_cv_to_perform=5,metric_to_eval = 'f1'):
+
+def model_selection(x, y, number_of_cv_to_perform=5, metric_to_eval='f1'):
     """
      Arguments:
         x: input features
