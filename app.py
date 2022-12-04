@@ -38,13 +38,13 @@ def main(train_mode=False, backbone='all-mpnet-base-v2', dont_use_headlines=True
         pickle.dump(model, pickle_out)
         pickle_out.close()
     else:
-        run_flask()
+        run_flask(backbone, dont_use_headlines)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--train_mode', action='store_true')
-    parser.add_argument('--backbone', default='all-mpnet-base-v2')
+    parser.add_argument('--backbone', default='all-MiniLM-L6-v2')
     parser.add_argument('--dont_use_headlines',  action='store_false')
     args = parser.parse_args()
 
